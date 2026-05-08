@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free London Developers Pack — Real Build Costs 2026 | The QS Guys</title>
+  <meta name="description" content="Download the free London Developers Pack — a real QS cost breakdown for a 480m² new build in South East England. 16 trade zones, £2,866/m², prelims breakdown included." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:   #1a7a4a;
+      --green-d: #0f4d2e;
+      --orange:  #e8622a;
+      --white:   #ffffff;
+      --off:     #f7f8f6;
+      --text:    #1c2b20;
+      --muted:   #5a6b60;
+      --border:  #d8e4dc;
+      --dark:    #111a14;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+
+    /* NAV */
+    nav {
+      background: var(--dark);
+      padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand { font-size: 1.3rem; font-weight: 800; color: white; letter-spacing: -0.5px; text-decoration: none; }
+    .nav-brand span { color: var(--orange); }
+    .nav-tag {
+      background: var(--orange);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--dark);
+      color: white;
+      padding: 80px 24px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(26,122,74,0.35) 0%, transparent 70%);
+    }
+    .hero-inner { position: relative; max-width: 780px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(232,98,42,0.15);
+      border: 1px solid rgba(232,98,42,0.4);
+      color: #ff9a6c;
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 900; letter-spacing: -1.5px; line-height: 1.1;
+      margin-bottom: 20px;
+      color: white;
+    }
+    .hero h1 em { font-style: normal; color: #ffd166; }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,0.75);
+      max-width: 600px; margin: 0 auto 40px;
+    }
+
+    /* STATS STRIP (dark) */
+    .stats-dark {
+      background: rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 24px;
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0;
+    }
+    .sd-item {
+      padding: 10px 36px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .sd-item:last-child { border-right: none; }
+    @media (max-width: 600px) { .sd-item { border-right: none; padding: 10px 20px; } }
+    .sd-num { font-size: 1.9rem; font-weight: 900; color: #ffd166; display: block; line-height: 1; }
+    .sd-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
+
+    /* HERO BOTTOM SPACER */
+    .hero-bottom { height: 60px; background: var(--dark); }
+
+    /* MAIN CONTENT */
+    .main { padding: 64px 24px; }
+    .main-inner {
+      max-width: 1020px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start;
+    }
+    @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
+
+    /* LEFT — WHAT'S INSIDE */
+    .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+    .left-col h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 800; letter-spacing: -0.5px; line-height: 1.2; margin-bottom: 14px; }
+    .left-col > p { font-size: 0.95rem; color: var(--muted); margin-bottom: 28px; }
+
+    /* TRADE ZONES TABLE */
+    .zones-table { width: 100%; border-collapse: collapse; margin-bottom: 28px; font-size: 0.88rem; }
+    .zones-table thead tr { background: var(--green); color: white; }
+    .zones-table th { padding: 10px 12px; text-align: left; font-weight: 700; font-size: 0.78rem; letter-spacing: 0.5px; text-transform: uppercase; }
+    .zones-table tbody tr { border-bottom: 1px solid var(--border); }
+    .zones-table tbody tr:nth-child(even) { background: var(--off); }
+    .zones-table td { padding: 9px 12px; }
+    .zones-table td:last-child { font-weight: 700; color: var(--text); text-align: right; }
+    .zones-more { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-top: -16px; margin-bottom: 24px; }
+
+    /* PRELIMS BREAKDOWN */
+    .prelims-box {
+      background: var(--off); border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px 20px; margin-bottom: 24px;
+    }
+    .prelims-box h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .prelims-box .prelims-total { font-size: 1.4rem; font-weight: 900; color: var(--green); margin-bottom: 12px; }
+    .prelims-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .prelims-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.86rem; color: var(--muted); }
+    .prelims-list li::before { content: '→'; color: var(--orange); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* RISK ITEMS */
+    .risk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 8px; }
+    .risk-card {
+      background: #fff8f5; border: 1px solid #ffd4c0; border-radius: 10px;
+      padding: 14px 14px;
+    }
+    .risk-card h4 { font-size: 0.82rem; font-weight: 700; color: var(--orange); margin-bottom: 4px; }
+    .risk-card p { font-size: 0.78rem; color: var(--muted); }
+
+    /* FORM SIDE */
+    .form-side {}
+    .form-header {
+      background: var(--green-d);
+      color: white;
+      border-radius: 14px 14px 0 0;
+      padding: 24px 24px 20px;
+    }
+    .form-header h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 6px; }
+    .form-header p { font-size: 0.88rem; opacity: 0.8; }
+    .form-includes { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
+    .form-includes li { display: flex; align-items: center; gap: 8px; font-size: 0.84rem; opacity: 0.9; }
+    .form-includes li::before { content: '✓'; color: #7dffb3; font-weight: 700; flex-shrink: 0; }
+    .ghl-wrap {
+      background: var(--off);
+      border: 1px solid var(--border);
+      border-radius: 0 0 14px 14px;
+      padding: 4px;
+      overflow: hidden;
+    }
+    .ghl-wrap iframe { width: 100%; height: 660px; border: none; border-radius: 0 0 10px 10px; display: block; }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--dark); color: white;
+      padding: 28px 24px;
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 24px 48px;
+    }
+    .t-item { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; font-weight: 600; color: rgba(255,255,255,0.7); }
+    .t-dot { width: 6px; height: 6px; background: #ffd166; border-radius: 50%; flex-shrink: 0; }
+
+    /* FOOTER */
+    footer { background: var(--dark); color: rgba(255,255,255,0.5); text-align: center; padding: 32px 24px; font-size: 0.82rem; border-top: 1px solid rgba(255,255,255,0.07); }
+    footer strong { color: white; }
+    footer .footer-nav { margin-top: 10px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+    footer a:hover { color: white; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">The QS <span>Guys</span></a>
+  <div class="nav-tag">Free Download</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">🏙️ London & South East — 2026</div>
+    <h1>The Free<br><em>London Developers Pack</em></h1>
+    <p>A real QS cost breakdown from an actual project — 480m² new build, SE England, 16 trade zones, every line priced. No estimates. No guesswork. Real numbers.</p>
+  </div>
+  <div class="stats-dark">
+    <div class="sd-item"><span class="sd-num">£1,375,524</span><div class="sd-label">Total Build Cost</div></div>
+    <div class="sd-item"><span class="sd-num">£2,866</span><div class="sd-label">Cost Per m²</div></div>
+    <div class="sd-item"><span class="sd-num">16</span><div class="sd-label">Trade Zones</div></div>
+    <div class="sd-item"><span class="sd-num">£190,790</span><div class="sd-label">Preliminaries</div></div>
+    <div class="sd-item"><span class="sd-num">480m²</span><div class="sd-label">GFA</div></div>
+  </div>
+</section>
+<div class="hero-bottom"></div>
+
+<!-- MAIN -->
+<section class="main">
+  <div class="main-inner">
+
+    <!-- LEFT -->
+    <div class="left-col">
+      <div class="section-label">What's Inside</div>
+      <h2>A real project. Every number. Nothing hidden.</h2>
+      <p>This is a live cost plan extract from a two-storey new build we priced in South East England — timber frame, masonry outer leaf, full M&E, 52-week programme. We've removed client and location details. Everything else is real.</p>
+
+      <table class="zones-table">
+        <thead>
+          <tr><th>Zone</th><th>Description</th><th>Cost</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td>Substructure &amp; Foundations</td><td>£141,534</td></tr>
+          <tr><td>02</td><td>Drainage</td><td>£26,689</td></tr>
+          <tr><td>03</td><td>Timber Frame / Carpentry</td><td>£149,752</td></tr>
+          <tr><td>04</td><td>Structural Steel</td><td>£16,462</td></tr>
+          <tr><td>05</td><td>Brickwork / Blockwork</td><td>£85,105</td></tr>
+          <tr><td>06</td><td>Roof Coverings</td><td>£79,725</td></tr>
+          <tr><td>07</td><td>Windows &amp; External Doors</td><td>£93,328</td></tr>
+          <tr><td>08</td><td>Internal Doors &amp; Joinery</td><td>£123,138</td></tr>
+          <tr><td>09</td><td>Internal Walls &amp; Linings</td><td>£178,054</td></tr>
+        </tbody>
+      </table>
+      <p class="zones-more">+ 7 more zones in the full pack (M&amp;E, Fit-Out, Externals, Landscaping and more)</p>
+
+      <div class="prelims-box">
+        <h3>What's inside the Preliminaries?</h3>
+        <div class="prelims-total">£190,790</div>
+        <ul class="prelims-list">
+          <li>Scaffolding — erect, maintain &amp; strike + roof adaptations</li>
+          <li>Project manager, site management, setting out engineer</li>
+          <li>Skip hire, grab lorry, forklift &amp; fuel throughout</li>
+          <li>Building control fees, SAP/EPC, acoustic testing</li>
+          <li>Site insurance, H&amp;S plan, O&amp;M file</li>
+          <li>Welfare unit, site cabin, MEWP hire</li>
+          <li>Final clean + progressive site clean</li>
+          <li>Tree protection, traffic management, CDM signage</li>
+        </ul>
+      </div>
+
+      <div class="section-label">What Most Builders Miss</div>
+      <div class="risk-grid">
+        <div class="risk-card">
+          <h4>⚠ Radon Barrier</h4>
+          <p>Weald Clay area requirement. Missed = Building Control issue and costly retrofit.</p>
+        </div>
+        <div class="risk-card">
+          <h4>⚠ Beam &amp; Block GF</h4>
+          <p>Often value-engineered out by generic estimators. SE confirmed it. It stays.</p>
+        </div>
+        <div class="risk-card">
+          <h4>⚠ Zero VAT Status</h4>
+          <p>New builds are zero-rated. If your QS didn't flag this in cash flow, you overpaid.</p>
+        </div>
+        <div class="risk-card">
+          <h4>⚠ Prelim Omissions</h4>
+          <p>Most builders forget half the prelims list. This pack shows every line.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT — FORM -->
+    <div class="form-side">
+      <div class="form-header">
+        <h3>Get the London Developers Pack Free</h3>
+        <p>Full cost breakdown sent straight to you — 7 pages, 16 trade zones, real numbers.</p>
+        <ul class="form-includes">
+          <li>Full trade zone breakdown (all 16 zones)</li>
+          <li>Prelims itemised line by line</li>
+          <li>Risk &amp; omission checklist</li>
+          <li>Cost per m² benchmark for SE England</li>
+          <li>Zero-rated VAT guidance for new builds</li>
+        </ul>
+      </div>
+      <div class="ghl-wrap">
+        <iframe
+          src="https://portal.tradieuniversity.com/widget/form/VaWNJ92VZOz1DxrLTcN9"
+          id="inline-london-pack"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-activation-type="alwaysActivated"
+          data-deactivation-type="neverDeactivate"
+          data-form-name="LONDON DEVELOPERS PACK"
+          data-height="617"
+          data-layout-iframe-id="inline-london-pack"
+          data-form-id="VaWNJ92VZOz1DxrLTcN9"
+          title="London Developers Pack Download"
+        ></iframe>
+        <script src="https://portal.tradieuniversity.com/js/form_embed.js"></script>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="t-item"><div class="t-dot"></div>100+ UK Projects Priced</div>
+  <div class="t-item"><div class="t-dot"></div>48-Hour Turnaround</div>
+  <div class="t-item"><div class="t-dot"></div>SE England Specialists</div>
+  <div class="t-item"><div class="t-dot"></div>5★ Google Rating</div>
+  <div class="t-item"><div class="t-dot"></div>Zero VAT Guidance Included</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>The QS Guys</strong> — Professional Quantity Surveying for UK &amp; Ireland
+  <div class="footer-nav">
+    <a href="/">Home</a>
+    <a href="/ireland-rate-sheet/">Ireland Rate Sheet</a>
+    <a href="/london-developers-pack/">London Pack</a>
+    <a href="mailto:info@theqsguys.com">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
