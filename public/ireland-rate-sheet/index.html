@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Irish Construction Rate Sheet — The QS Guys</title>
+  <meta name="description" content="Download your free Irish Construction Rate Sheet. Up-to-date labour and material rates for Irish builders. Compiled by professional quantity surveyors." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:   #1a7a4a;
+      --green-d: #145e38;
+      --orange:  #e8622a;
+      --white:   #ffffff;
+      --off:     #f7f8f6;
+      --text:    #1c2b20;
+      --muted:   #5a6b60;
+      --border:  #d8e4dc;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+
+    /* NAV */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand { font-size: 1.35rem; font-weight: 800; color: var(--green); letter-spacing: -0.5px; text-decoration: none; }
+    .nav-brand span { color: var(--orange); }
+    .nav-link { font-size: 0.9rem; color: var(--muted); text-decoration: none; font-weight: 600; }
+    .nav-link:hover { color: var(--green); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0f4d2e 0%, #1a7a4a 60%, #2a9d64 100%);
+      color: var(--white);
+      padding: 72px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .hero h1 {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .hero h1 .accent { color: #ffd166; }
+    .hero p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 0; }
+
+    /* MAIN LAYOUT */
+    .main-section { padding: 64px 24px; }
+    .main-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    @media (max-width: 720px) { .main-inner { grid-template-columns: 1fr; } }
+
+    .left-col h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .left-col > p { font-size: 0.95rem; color: var(--muted); margin-bottom: 28px; }
+
+    .checklist { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+    .checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; }
+    .check-icon {
+      width: 22px; height: 22px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .check-icon svg { width: 12px; height: 12px; fill: white; }
+    .checklist li strong { color: var(--text); }
+    .checklist li span { color: var(--muted); font-size: 0.88rem; }
+
+    /* Review card */
+    .review-block { margin-top: 28px; }
+    .review-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .review-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .review-card img { width: 100%; display: block; }
+    .review-caption {
+      padding: 10px 14px;
+      font-size: 0.76rem;
+      color: var(--muted);
+      font-style: italic;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    /* Form side */
+    .ghl-wrap {
+      background: var(--off);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 4px;
+      overflow: hidden;
+    }
+    .ghl-wrap iframe { width: 100%; height: 660px; border: none; border-radius: 12px; display: block; }
+
+    /* Stats strip */
+    .stats-strip {
+      background: var(--green);
+      padding: 28px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+    }
+    .stat-item {
+      padding: 12px 40px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.2);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-size: 2rem; font-weight: 900; color: #ffd166; display: block; line-height: 1; }
+    .stat-label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+
+    /* Footer */
+    footer {
+      background: var(--text);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+    }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    footer strong { color: var(--white); }
+    footer .footer-nav { margin-top: 10px; display: flex; gap: 20px; justify-content: center; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">The QS <span>Guys</span></a>
+  <a href="/" class="nav-link">← Back to Home</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">🇮🇪 Free Resource for Irish Builders</div>
+    <h1>Ireland's Free Construction<br><span class="accent">Rate Sheet 2025/2026</span></h1>
+    <p>Up-to-date labour & material rates for Irish building projects — compiled by professional QS surveyors.</p>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="stat-item"><span class="stat-num">100+</span><div class="stat-label">Irish Jobs Priced</div></div>
+  <div class="stat-item"><span class="stat-num">48h</span><div class="stat-label">Avg Turnaround</div></div>
+  <div class="stat-item"><span class="stat-num">5★</span><div class="stat-label">Google Rating</div></div>
+  <div class="stat-item"><span class="stat-num">€</span><div class="stat-label">Irish Rates Applied</div></div>
+</div>
+
+<section class="main-section">
+  <div class="main-inner">
+
+    <div class="left-col">
+      <h2>Everything you need to price your next job accurately</h2>
+      <p>Compiled from real Irish project data by our quantity surveying team — not guesswork.</p>
+      <ul class="checklist">
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+          <div><strong>Labour Rates</strong><br><span>Trades, general labour, foreman & PM — hourly & daily across Irish counties</span></div>
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+          <div><strong>Material Costs</strong><br><span>Block, concrete, timber, insulation, roofing & fit-out at current Irish market prices</span></div>
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+          <div><strong>Preliminaries & Overhead</strong><br><span>Typical prelim benchmarks and O&P margins for Irish residential & commercial</span></div>
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+          <div><strong>VAT Guidance</strong><br><span>Current Irish VAT rules — 13.5% reduced rate for qualifying works explained</span></div>
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+          <div><strong>100% Free</strong><br><span>No credit card. No catch. Just the sheet.</span></div>
+        </li>
+      </ul>
+
+      <div class="review-block">
+        <div class="review-label">What builders say about us</div>
+        <div class="review-card">
+          <img src="/review.png" alt="5-star Google review for RapidQS" />
+          <div class="review-caption">Verified Google Review — RapidQS | UK</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="ghl-wrap">
+        <iframe
+          src="https://portal.tradieuniversity.com/widget/form/VaWNJ92VZOz1DxrLTcN9"
+          id="inline-VaWNJ92VZOz1DxrLTcN9"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-activation-type="alwaysActivated"
+          data-deactivation-type="neverDeactivate"
+          data-form-name="IRISH RATE SHEEL"
+          data-height="617"
+          data-layout-iframe-id="inline-VaWNJ92VZOz1DxrLTcN9"
+          data-form-id="VaWNJ92VZOz1DxrLTcN9"
+          title="IRISH RATE SHEEL"
+        ></iframe>
+        <script src="https://portal.tradieuniversity.com/js/form_embed.js"></script>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <strong>The QS Guys</strong> — Professional Quantity Surveying
+  <div class="footer-nav">
+    <a href="/">Home</a>
+    <a href="/ireland-rate-sheet/">Ireland Rate Sheet</a>
+    <a href="mailto:info@theqsguys.com">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
